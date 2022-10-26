@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    :root {
+        --sidebar-width: 200px;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: var(--sidebar-width);
+        background-color: gold;
+        transform: translateX(calk(var (--sidebar-width) * -1));
+        display: none;
+        transition: all 0.3s ease-out;
+    }
+    .menu--open {
+        transform: none;
+    }
+    header {
+        display: flex;
+        justify-self: space-between;
+        align-items: center;
+    }
+    button {
+        display: none;
+        background-color: blue;
+        color: rgb (250, 255, 240, 0.11);
+        padding: 1rem 2rem;
+        font-size: 1.5ren;
+        border: none;
+        border-radius: 8xp;
+        box-shadow: rgba(red, green, blue, alpha);
+        cursor: pointer;
+        transition: all ,5s ease-out;
+    }
+    button {
+        background: rgb(255, a, 170);
+    }
+</style>
+    
+
+</head>
+<body>
+    
+    <div class="menu"></div>
+
+    <header>
+        <h1>About compani</h1>
+
+        <div onclick="toggleMenu()">Menu</div>
+    </header>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae doloribus modi, facilis quo ab ad molestias voluptates officia obcaecati labore aliquam minus amet harum maxime architecto adipisci ipsam libero quisquam.
+    </p>
+   
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('menu--open');
+        }
+    </script>
+</body>
+</html>
