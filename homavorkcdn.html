@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        aside{
+          background-color: rgb(240, 238, 226);
+        }
+        html,
+        body,
+        .wrapper {
+          display: flex;
+          height: 100%;
+          justify-content: 
+          space-between;
+        }
+        .wrapper>div {
+            background-color: cadetblue;
+        }
+        main{ 
+          background-color: rgb(252, 250, 244);
+        }
+        section {
+          background-color: rgb(207, 199, 211);
+        }
+        .wrapper {
+          width: 1024px;
+          display: grid;
+          grid-template-rows: 100px auto 100px;
+        }
+        body {
+          display: flex;
+          justify-content: center;
+        }
+        aside {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        li {
+          list-style: none;
+        }
+        li a {
+          color: black;
+          text-decoration: none;
+          font-weight: 600;
+          padding: 10px 40px;
+        }
+        .button {
+          background-color: green;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 18px;
+        }
+        ul {
+          display: flex;
+        }
+        .icon {
+          width: 48PX;
+          aspect-ratio: 1;
+          color: black;
+          border: 1px solid;
+          border-radius: 50%;
+          margin-right: 10px;
+          text-decoration: none;
+          font-size: 1.5rem;
+          display: inline-flex;
+          justify-content: center ;
+          align-items: center;
+        }
+        .sidebar {
+        grid-area: sidebar;
+        }
+        .header {
+        grid-area: header;
+        }
+        .main {
+        grid-area: main;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="">
+            </figure>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://google.de">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="https://google.de">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="https://google.de">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="https://google.de">Link 4</a>
+                    </li>
+                    <li>
+                        <a href="https://google.de">Link 5</a>
+                    </li>
+                    <li>
+                        <a class="button" href="https://google.de" target="_blank">Link 6</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main> 
+            <div class="icons">
+                <a href="" class="icon">
+                    <i class="las la-crow"></i>
+                </a>
+                <a href="" class="icon">
+                    <i class="las la-crow"></i>
+                </a>
+                <a href="" class="icon">
+                    <i class="las la-crow"></i>
+                </a>
+            </div>
+        </main>
+
+        <section class="wrapper">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="sidebar"></div>
+            <div class="header"></div>
+            <div class="main"></div>
+        </section>
+     </div>
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="">
+    
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+      }
+      aside{
+        background-color: rgb(240, 238, 226);
+      }
+      html,
+      body,
+      .wrapper {
+        height: 100%;
+      }
+      main{ 
+        background-color: rgb(252, 250, 244);
+      }
+      section {
+        background-color: rgb(207, 199, 211);
+      }
+      .wrapper {
+        width: 1024px;
+        display: grid;
+        grid-template-rows: 100px auto 200px;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      aside {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      li {
+        list-style: none;
+      }
+      li a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 10px 40px;
+      }
+      .button {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 18px;
+      }
+      ul {
+        display: flex;
+      }
+      .icon {
+        width: 48PX;
+        aspect-ratio: 1;
+        color: black;
+        border: 1px solid;
+        border-radius: 50%;
+        margin-right: 10px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: inline-flex;
+        justify-content: center ;
+        align-items: center;
+      }
+    </style>
+</head>
+<body>
+    
+     <div class="wrapper">
+        <aside>
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="">
+            </figure>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://google.de">Link 1</a>
+                    </li>
+
+                    <li>
+                        <a class="button" href="https://google.de" target="_blank">Link 4</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main> 
+            <div class="icons">
+                <a href="" class="icon">
+                    <i class="las la-crow"></i>
+                </a>
+            </div>
+        </main>
+
+        <section> </section>
+     </div>
+
+</body>
+</html>
