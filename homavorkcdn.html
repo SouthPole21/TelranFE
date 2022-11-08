@@ -1,148 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <style>
-        *{
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-        aside{
-          background-color: rgb(240, 238, 226);
-        }
-        html,
-        body,
-        .wrapper {
-          display: flex;
-          height: 100%;
-          justify-content: 
-          space-between;
-        }
-        .wrapper>div {
-            background-color: cadetblue;
-        }
-        main{ 
-          background-color: rgb(252, 250, 244);
-        }
-        section {
-          background-color: rgb(207, 199, 211);
-        }
-        .wrapper {
-          width: 1024px;
-          display: grid;
-          grid-template-rows: 100px auto 100px;
-        }
-        body {
-          display: flex;
-          justify-content: center;
-        }
-        aside {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-        li {
-          list-style: none;
-        }
-        li a {
-          color: black;
-          text-decoration: none;
-          font-weight: 600;
-          padding: 10px 40px;
-        }
-        .button {
-          background-color: green;
-          color: white;
-          padding: 10px 20px;
-          border-radius: 18px;
-        }
-        ul {
-          display: flex;
-        }
-        .icon {
-          width: 48PX;
-          aspect-ratio: 1;
-          color: black;
-          border: 1px solid;
-          border-radius: 50%;
-          margin-right: 10px;
-          text-decoration: none;
-          font-size: 1.5rem;
-          display: inline-flex;
-          justify-content: center ;
-          align-items: center;
-        }
-        .sidebar {
-        grid-area: sidebar;
-        }
-        .header {
-        grid-area: header;
-        }
-        .main {
-        grid-area: main;
-        }
-    </style>
+  <style> 
+     .wrapper {
+      display: grid;
+      grid-template-rows: 150px 600px 250px;
+     }
+     .header {
+      display: grid;
+      margin: 40px;
+      background-color: blue;
+      grid-template-columns: repeat(3, 1fr);
+     }
+     .main {
+      display: grid;
+      margin: 40px;
+      background-color: rgb(231, 144, 13);
+      grid-template-columns: 30% 70%;
+     }
+     .futer {
+      margin: 40px;
+      background-color: rgb(6, 199, 16);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+     }
+     .logo {
+      margin: 10px;
+     }
+     .menu {
+      margin: 10px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-gap: 10px;
+     }
+     .botton {
+        background-color: green;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 10px;
+     }
+     .infirmation {
+      margin: 10px;
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+     }
+     .picture{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPQ0jrWF-2SPvBzW7Pg6gv-BfJYsUUbRtVKg&usqp=CAU");
+      background-repeat: no-repeat;
+      background-size: cover;
+     }
+     .picture img {
+      border-radius: 20px;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      padding: 20px 20px 20px 20px;
+     }
+     .refueling {
 
+     }
+     .delivery {
+
+     }
+     .bottons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+     }
+     .icons {
+    
+     }
+     .specifed {
+      display: grid;
+      grid-template-rows: 50px 30px 20px;
+      grid-row-gap: 4px;
+     }
+     .del {
+      display: grid;
+      grid-template-rows: 50px 30px 20px;
+      grid-row-gap: 4px;
+     }
+     .payment {
+      display: grid;
+      grid-template-rows: 50px 30px 20px;
+      grid-row-gap: 4px;
+     }
+     .clock img { border-radius: 20px;
+  object-fit: cover;
+  height: 40px;
+  width: 40px;
+  padding: 20px 20px 20px 20px;
+	
+}
+.sorder {
+	
+}
+.refuel {
+	
+}
+.marc img { border-radius: 20px;
+  object-fit: cover;
+  height: 40px;
+  width: 40px;
+  padding: 20px 20px 20px 20px;
+	
+}
+.deli {
+	
+}
+.ref {
+	
+}
+.kard img { border-radius: 20px;
+  object-fit: cover;
+  height: 40px;
+  width: 40px;
+  padding: 20px 20px 20px 20px;
+	
+}
+.ptypes {
+  
+}
+.make {
+	
+}
+.apple {
+  background-color: rgb(12, 12, 12);
+        color: white;
+        padding: 20px 20px;
+        border-radius: 10px;
+}
+.googl {
+  background-color: rgb(16, 17, 16);
+        color: white;
+        padding: 20px 20px;
+        border-radius: 10px;
+}
+  </style>
 </head>
 <body>
-    <div class="wrapper">
-        <aside>
-            <figure>
-                <img src="https://via.placeholder.com/150" alt="">
-            </figure>
+   <div class="wrapper">
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://google.de">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="https://google.de">Link 2</a>
-                    </li>
-                    <li>
-                        <a href="https://google.de">Link 3</a>
-                    </li>
-                    <li>
-                        <a href="https://google.de">Link 4</a>
-                    </li>
-                    <li>
-                        <a href="https://google.de">Link 5</a>
-                    </li>
-                    <li>
-                        <a class="button" href="https://google.de" target="_blank">Link 6</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+    <div class="header">
+      <div class="logo">logo</div>
 
-        <main> 
-            <div class="icons">
-                <a href="" class="icon">
-                    <i class="las la-crow"></i>
-                </a>
-                <a href="" class="icon">
-                    <i class="las la-crow"></i>
-                </a>
-                <a href="" class="icon">
-                    <i class="las la-crow"></i>
-                </a>
-            </div>
-        </main>
+      <div class="menu">
+        <div class="Link1">Link1</div>
+        <div class="Link2">Link2</div>
+        <div class="Link3">Link3</div>
+        <div class="Link4">Link4</div>
+        <div class="Link5">Link5</div>
+        <div class="Link6">Link6</div>
+      </div>
 
-        <section class="wrapper">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div class="sidebar"></div>
-            <div class="header"></div>
-            <div class="main"></div>
-        </section>
-     </div>
-    
+      <div class="botton">botton</div>
+    </div>
+
+    <div class="main">
+
+      <div class="infirmation">
+        <div class="refueling">
+         <h1>
+           Refueling a car at your address
+         </h1>
+        </div> 
+         <!-- <div class="delivery">
+          <h3>
+            Delivery service for all types of fuel for yor car
+          </h3>
+         </div> 
+        <div class="bottons">
+          <div class="apple">
+            <h4>Apple Store</h4>
+          </div>
+          <div class="googl">
+            <h4>GOOGLE PlAY</h4>
+          </div>
+        </div> 
+        <div class="icons">
+          icons
+        </div> -->
+      </div> 
+
+      <div class="picture">&nbsp;</div>
+
+    </div>
+
+    <div class="futer">
+      <div class="specifed">
+        <div class="clock"><img src="https://img.icons8.com/ultraviolet/480/clock--v1.png"></div>
+        <div class="sorder">
+          <h2>Specifide order</h2>
+        </div>
+        <div class="refuel">
+          <h4>Refueling your car at the time and date you specify</h4>
+        </div>
+      </div>
+
+      <div class="del">
+        <div class="marc"><img src="data:image/jpeg;base64,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"></div>
+        <div class="deli">
+          <h2>Delivery</h2>
+        </div>
+        <div class="ref">
+          <h4>Refueling is carried out anywhere in the city</h4>
+        </div>
+      </div>
+
+      <div class="payment">
+        <div class="kard"><img src="data:image/png;base64,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"></div>
+        <div class="ptypes">
+          <h2>Payment types</h2>
+        </div>
+        <div class="make">
+          <h4>Maket a payment in any way convenient for tou</h4>
+        </div>
+      </div>
+    </div>
+
+   </div>
 </body>
 </html>
